@@ -1,5 +1,15 @@
 body {
- 
-
-background-color: linear-gradient(180deg, rgba(252,5,5,1) 0%, rgba(0,0,0,1) 100%);
+background: rgb(0,0,0);
+background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(8,124,252,1) 100%);
+}
+.card{
+background: rgb(255,255,255);
+  margin-top: 10px;
+max-width: 500px;
+}
+dt{
+color:rgb(255,255,255);
+}
+.blockquote-footer {
+color:rgb(255,255,255);
 }
