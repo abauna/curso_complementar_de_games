@@ -3997,7 +3997,10 @@ self.C3_JsPropNameTable = [
 	{Sprite7: 0},
 	{vocêVenceu: 0},
 	{Sprite8: 0},
-	{Sprite9: 0}
+	{Sprite9: 0},
+	{volte: 0},
+	{voltarParaOInicio: 0},
+	{voltarClaramente: 0}
 ];
 }
 
