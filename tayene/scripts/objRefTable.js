@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Plugins.Text,
+		C3.Plugins.Button,
+		C3.Behaviors.EightDir,
+		C3.Behaviors.solid,
+		C3.Behaviors.Sin,
+		C3.Behaviors.Bullet,
+		C3.Plugins.Keyboard,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Keyboard.Cnds.OnKey,
+		C3.Plugins.Sprite.Acts.Spawn,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.System.Acts.AddVar,
+		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.System.Acts.SetVar
+	];
+};
+self.C3_JsPropNameTable = [
+	{Sprite: 0},
+	{Texto: 0},
+	{Botão: 0},
+	{Botão2: 0},
+	{Sprite2: 0},
+	{Texto2: 0},
+	{Botão3: 0},
+	{Sprite3: 0},
+	{"8Direções": 0},
+	{Sprite4: 0},
+	{Sólido: 0},
+	{Sprite5: 0},
+	{Senóide: 0},
+	{Sprite6: 0},
+	{Projétil: 0},
+	{Sprite7: 0},
+	{Teclado: 0},
+	{Sprite8: 0},
+	{Texto3: 0},
+	{Botão4: 0},
+	{Sprite9: 0},
+	{Texto4: 0},
+	{Botão5: 0},
+	{Pontos: 0}
+];
+
+self.InstanceType = {
+	Sprite: class extends self.ISpriteInstance {},
+	Texto: class extends self.ITextInstance {},
+	Botão: class extends self.IButtonInstance {},
+	Botão2: class extends self.IButtonInstance {},
+	Sprite2: class extends self.ISpriteInstance {},
+	Texto2: class extends self.ITextInstance {},
+	Botão3: class extends self.IButtonInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {},
+	Sprite6: class extends self.ISpriteInstance {},
+	Sprite7: class extends self.ISpriteInstance {},
+	Teclado: class extends self.IInstance {},
+	Sprite8: class extends self.ISpriteInstance {},
+	Texto3: class extends self.ITextInstance {},
+	Botão4: class extends self.IButtonInstance {},
+	Sprite9: class extends self.ISpriteInstance {},
+	Texto4: class extends self.ITextInstance {},
+	Botão5: class extends self.IButtonInstance {}
+}
