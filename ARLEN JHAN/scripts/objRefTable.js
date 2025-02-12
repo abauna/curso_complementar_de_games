@@ -49,7 +49,8 @@ self.C3_JsPropNameTable = [
 	{Botão3: 0},
 	{Sprite12: 0},
 	{Sprite13: 0},
-	{Botão4: 0}
+	{Botão4: 0},
+	{Botão5: 0}
 ];
 
 self.InstanceType = {
@@ -78,5 +79,6 @@ self.InstanceType = {
 	Botão3: class extends self.IButtonInstance {},
 	Sprite12: class extends self.ISpriteInstance {},
 	Sprite13: class extends self.ISpriteInstance {},
-	Botão4: class extends self.IButtonInstance {}
+	Botão4: class extends self.IButtonInstance {},
+	Botão5: class extends self.IButtonInstance {}
 }
