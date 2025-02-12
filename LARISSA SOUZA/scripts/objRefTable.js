@@ -37,7 +37,9 @@ self.C3_JsPropNameTable = [
 	{inimigo: 0},
 	{perdeu: 0},
 	{venceu: 0},
-	{Botão3: 0}
+	{Botão3: 0},
+	{jogar: 0},
+	{bananaaa: 0}
 ];
 
 self.InstanceType = {
@@ -55,5 +57,7 @@ self.InstanceType = {
 	inimigo: class extends self.ISpriteInstance {},
 	perdeu: class extends self.ISpriteInstance {},
 	venceu: class extends self.ISpriteInstance {},
-	Botão3: class extends self.IButtonInstance {}
+	Botão3: class extends self.IButtonInstance {},
+	jogar: class extends self.IButtonInstance {},
+	bananaaa: class extends self.ISpriteInstance {}
 }
