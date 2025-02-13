@@ -12,6 +12,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Acts.Spawn,
+		C3.Plugins.Sprite.Cnds.IsMirrored,
+		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Sprite.Cnds.OnCollision,
@@ -41,7 +43,7 @@ self.C3_JsPropNameTable = [
 	{cenario5: 0},
 	{Sprite2: 0},
 	{Projétil: 0},
-	{imageremovebgpreview: 0},
+	{bala: 0},
 	{Teclado: 0},
 	{gameOver: 0},
 	{voltarrr: 0},
@@ -65,7 +67,8 @@ self.C3_JsPropNameTable = [
 	{voltar22: 0},
 	{Sprite4: 0},
 	{rival_2removebgpreview2: 0},
-	{revalremovebgpreview2: 0}
+	{revalremovebgpreview2: 0},
+	{Sprite5: 0}
 ];
 
 self.InstanceType = {
@@ -84,7 +87,7 @@ self.InstanceType = {
 	rival_2removebgpreview: class extends self.ISpriteInstance {},
 	cenario5: class extends self.ISpriteInstance {},
 	Sprite2: class extends self.ISpriteInstance {},
-	imageremovebgpreview: class extends self.ISpriteInstance {},
+	bala: class extends self.ISpriteInstance {},
 	Teclado: class extends self.IInstance {},
 	gameOver: class extends self.ISpriteInstance {},
 	voltarrr: class extends self.IButtonInstance {},
@@ -108,5 +111,6 @@ self.InstanceType = {
 	voltar22: class extends self.IButtonInstance {},
 	Sprite4: class extends self.ISpriteInstance {},
 	rival_2removebgpreview2: class extends self.ISpriteInstance {},
-	revalremovebgpreview2: class extends self.ISpriteInstance {}
+	revalremovebgpreview2: class extends self.ISpriteInstance {},
+	Sprite5: class extends self.ISpriteInstance {}
 }
