@@ -1,0 +1,72 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Plugins.Mouse,
+		C3.Plugins.Text,
+		C3.Behaviors.solid,
+		C3.Behaviors.Platform,
+		C3.Plugins.Button,
+		C3.Plugins.Mouse.Cnds.OnObjectClicked,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.Sprite.Cnds.OnCollision,
+		C3.Plugins.Button.Cnds.OnClicked
+	];
+};
+self.C3_JsPropNameTable = [
+	{Sprite2: 0},
+	{Sprite3: 0},
+	{Sprite4: 0},
+	{Mouse: 0},
+	{Texto3: 0},
+	{Sprite5: 0},
+	{Texto5: 0},
+	{Texto6: 0},
+	{Sprite6: 0},
+	{Sprite9: 0},
+	{Texto8: 0},
+	{Sólido: 0},
+	{Sprite: 0},
+	{Plataforma: 0},
+	{Sprite7: 0},
+	{Sprite8: 0},
+	{Sprite10: 0},
+	{Sprite11: 0},
+	{Sprite12: 0},
+	{Sprite13: 0},
+	{Botão2: 0},
+	{Botão3: 0},
+	{Texto7: 0},
+	{Texto4: 0},
+	{Texto2: 0},
+	{Texto9: 0},
+	{Texto: 0}
+];
+
+self.InstanceType = {
+	Sprite2: class extends self.ISpriteInstance {},
+	Sprite3: class extends self.ISpriteInstance {},
+	Sprite4: class extends self.ISpriteInstance {},
+	Mouse: class extends self.IInstance {},
+	Texto3: class extends self.ITextInstance {},
+	Sprite5: class extends self.ISpriteInstance {},
+	Texto5: class extends self.ITextInstance {},
+	Texto6: class extends self.ITextInstance {},
+	Sprite6: class extends self.ISpriteInstance {},
+	Sprite9: class extends self.ISpriteInstance {},
+	Texto8: class extends self.ITextInstance {},
+	Sprite: class extends self.ISpriteInstance {},
+	Sprite7: class extends self.ISpriteInstance {},
+	Sprite8: class extends self.ISpriteInstance {},
+	Sprite10: class extends self.ISpriteInstance {},
+	Sprite11: class extends self.ISpriteInstance {},
+	Sprite12: class extends self.ISpriteInstance {},
+	Sprite13: class extends self.ISpriteInstance {},
+	Botão2: class extends self.IButtonInstance {},
+	Botão3: class extends self.IButtonInstance {},
+	Texto7: class extends self.ITextInstance {},
+	Texto4: class extends self.ITextInstance {},
+	Texto2: class extends self.ITextInstance {},
+	Texto9: class extends self.ITextInstance {},
+	Texto: class extends self.ITextInstance {}
+}
