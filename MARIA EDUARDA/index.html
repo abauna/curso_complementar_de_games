@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Tela de Menu Inicial -->
+    <div id="menu-inicial" class="tela ativa">
+        <div class="container">
+            <h1>Jogo de Adivinhação</h1>
+            <p>Descubra o número secreto entre 1 e 100!</p>
+            <button onclick="irParaTutorial()">Ir para Tutorial</button>
+            <button onclick="iniciarJogo()">Iniciar Jogo</button>
+        </div>
+    </div>
+
+    <!-- Tela de Tutorial -->
+    <div id="tutorial" class="tela">
+        <div class="container">
+            <h1>Como Jogar</h1>
+            <div class="tutorial-content">
+                <h2>Objetivo:</h2>
+                <p>Descubra o número secreto entre 1 e 100 em até 10 tentativas!</p>
+                
+                <h2>Como jogar:</h2>
+                <ul>
+                    <li>Digite um número entre 1 e 100</li>
+                    <li>Clique em "Tentar" para fazer seu palpite</li>
+                    <li>O jogo dirá se o número é maior ou menor</li>
+                    <li>Você tem 10 tentativas para acertar</li>
+                </ul>
+                
+                <h2>Condições:</h2>
+                <p><strong>Vitória:</strong> Acertar o número secreto</p>
+                <p><strong>Derrota:</strong> Esgotar as 10 tentativas sem acertar</p>
+            </div>
+            <button onclick="voltarMenu()">Voltar ao Menu</button>
+            <button onclick="iniciarJogo()">Começar a Jogar</button>
+        </div>
+    </div>
+
+    <!-- Tela de Jogo -->
+    <div id="jogo" class="tela">
+        <div class="container">
+            <h1>Jogo de Adivinhação</h1>
+            <div class="game-info">
+                <p>Tentativas restantes: <span id="tentativas">10</span></p>
+                <p>Pontuação: <span id="pontuacao">0</span></p>
+            </div>
+            
+            <div class="game-area">
+                <p id="dica">Digite um número entre 1 e 100:</p>
+                <input type="number" id="palpite" min="1" max="100" placeholder="Seu palpite">
+                <button onclick="fazerPalpite()">Tentar</button>
+            </div>
+            
+            <div id="historico">
+                <h3>Histórico de tentativas:</h3>
+                <ul id="lista-tentativas"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Vitória -->
+    <div id="vitoria" class="tela">
+        <div class="container">
+            <h1>🎉 Você Venceu! 🎉</h1>
+            <p id="mensagem-vitoria">Parabéns! Você descobriu o número secreto!</p>
+            <p id="pontuacao-final"></p>
+            <button onclick="voltarMenu()">Voltar ao Menu</button>
+        </div>
+    </div>
+
+    <!-- Tela de Derrota -->
+    <div id="derrota" class="tela">
+        <div class="container">
+            <h1>😞 Você Perdeu! 😞</h1>
+            <p id="mensagem-derrota">Suas tentativas acabaram!</p>
+            <p id="numero-secreto-revelado"></p>
+            <button onclick="voltarMenu()">Voltar ao Menu</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
